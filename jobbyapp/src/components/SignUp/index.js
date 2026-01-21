@@ -41,7 +41,7 @@ class SignUp extends Component {
         const userDetails = { name, email, password, phone_number, bio }
 
         try {
-            const response = await fetch('http://localhost:5000/signup', {
+            const response = await fetch('https://jobby-app-fullstack-project.onrender.com/signup', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(userDetails)
