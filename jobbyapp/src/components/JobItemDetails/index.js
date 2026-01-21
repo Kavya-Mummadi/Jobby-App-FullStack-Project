@@ -47,7 +47,7 @@ class JobItemDetails extends Component {
 
         const jwtToken = Cookies.get('jwt_token')
         console.log(jwtToken)
-        const response = await fetch('https://jobby-app-fullstack-project.onrender.com/${id}', {
+        const response = await fetch('https://jobby-app-fullstack-project.onrender.com/jobs/${id}', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
