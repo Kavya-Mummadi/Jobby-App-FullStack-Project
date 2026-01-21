@@ -31,7 +31,7 @@ const initializeDBAndServer = async () => {
         const port = process.env.PORT || 5000;
 
         app.listen(port, () => {
-            console.log(`🚀🚀 JobbyApp Backend Running at Port ${port} 🚀🚀`)
+            console.log(`Server Running at Port ${port}`);
         });
 
     } catch (e) {
