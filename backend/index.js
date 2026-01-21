@@ -12,11 +12,10 @@ app.use(express.json())
 
 const cors = require('cors');
 app.use(cors({
-    origin: 'http://localhost:3000', // allow frontend
+    origin: '*', // This allows all origins (easiest for testing deployment)
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
 }));
-
 const dbPath = path.join(__dirname, "jobbyApp.db");
 
 let db = null;
@@ -28,9 +27,12 @@ const initializeDBAndServer = async () => {
             driver: sqlite3.Database
         })
 
-        app.listen(5000, () => {
-            console.log("🚀🚀 JobbyApp Backend Running at http://localhost:5000 🚀🚀")
-        })
+        // Use the port Render gives you, or 5000 for local testing
+        const port = process.env.PORT || 5000;
+
+        app.listen(port, () => {
+            console.log(`🚀🚀 JobbyApp Backend Running at Port ${port} 🚀🚀`)
+        });
 
     } catch (e) {
         console.log(`DB Error: ${e.message}`)
