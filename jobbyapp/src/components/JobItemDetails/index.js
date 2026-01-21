@@ -104,7 +104,7 @@ class JobItemDetails extends Component {
         const { id } = params
 
         const jwtToken = Cookies.get('jwt_token')
-        const url = `http://localhost:5000/jobs/${id}`
+        const url = `https://jobby-app-fullstack-project.onrender.com/jobs/${id}`
         const options = {
             headers: {
                 Authorization: `Bearer ${jwtToken}`,

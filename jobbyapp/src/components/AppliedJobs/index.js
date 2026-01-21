@@ -24,7 +24,7 @@ class AppliedJobsRoute extends Component {
         const decoded = jwtDecode(jwtToken)
         const userId = decoded.id
 
-        const url = `http://localhost:5000/applied-jobs/${userId}`
+        const url = `https://jobby-app-fullstack-project.onrender.com/applied-jobs/${userId}`
         const options = {
             method: 'GET',
             headers: {

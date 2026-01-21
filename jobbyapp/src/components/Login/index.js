@@ -23,7 +23,7 @@ class Login extends Component {
         const { username, email, password } = this.state
         const userDetails = { name: username, email, password }
 
-        const apiUrl = 'http://localhost:5000/login'
+        const apiUrl = 'https://jobby-app-fullstack-project.onrender.com/login'
         const options = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
