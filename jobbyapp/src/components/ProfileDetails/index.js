@@ -23,7 +23,7 @@ class ProfileCard extends Component {
     getProfile = async () => {
         this.setState({ apiStatus: apiStatusConstants.inProgress })
         const token = Cookies.get('jwt_token')
-        const apiUrl = 'http://localhost:5000/profile'
+        const apiUrl = 'https://jobby-app-fullstack-project.onrender.com/profile'
         const options = {
             headers: {
                 Authorization: `Bearer ${token}`,
