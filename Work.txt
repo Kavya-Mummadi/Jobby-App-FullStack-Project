@@ -1,0 +1,4 @@
+(1) Send mail to the user when user apply for job 
+(2) Google sign up and login
+(3) Chatbot
+(4) Admin role

@@ -1,0 +1,31 @@
+POST http://localhost:5000/signup
+Content-Type: application/json
+
+{
+  "name": "siva",
+  "email": "siva@gmail.com",
+  "password": "siva",
+  "phone_number": "8367233324"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "name": "kavya",
+  "email": "kavya@gmail.com",
+  "password": "kavya"
+}
+
+###
+GET http://localhost:5000/jobs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia2F2eWEiLCJpYXQiOjE3Njg4MTQyMjV9.M0PANve5IIaEsElDyu5JDcSqNEQ54Yzb1G7TRdcUjuo
+
+###
+GET http://localhost:5000/jobs/44
+Authorization: Bearer 
+
+###
+GET http://localhost:5000/applied-jobs/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoia2F2eWEiLCJpYXQiOjE3Njg5MjI2NzV9.91MJ40EwSrF1mdyLsXjPq5VaWoNBIurEn3-2hlZMP0s
