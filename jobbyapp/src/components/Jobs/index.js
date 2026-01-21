@@ -71,7 +71,7 @@ class Jobs extends Component {
             apiStatus: apiStatusConstants.inProgress,
         })
         const { employeeType, minimumSalary, searchInput } = this.state
-        const apiUrl = `http://localhost:5000/jobs?employment_type=${employeeType.join()}&minimum_package=${minimumSalary}&search=${searchInput}`
+        const apiUrl = `https://jobby-app-fullstack-project.onrender.com/jobs?employment_type=${employeeType.join()}&minimum_package=${minimumSalary}&search=${searchInput}`
 
         const jwtToken = Cookies.get('jwt_token')
         console.log(jwtToken)
